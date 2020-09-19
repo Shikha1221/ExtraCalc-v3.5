@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html dir="ltr" data-scrapbook-source="http://sampleapp.sukanyasoftwares.com/calc2/" data-scrapbook-create="20200818103747402">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link href="css/calc_bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/calcstyle.css" type="text/css">
+    <link rel="stylesheet" href="css/ion.rangeslider.css" type="text/css">
+    <link rel="stylesheet" href="css/hosting.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <head>
+
+<body style="">
+    
+	<div class="container-calc">
+		
+		<div class="calc-body">
+			<div class="logo-block">
+				<span>ExtraCalc v3.5</span>
+			</div>
+			<div class="section nopadding nobg">
+                <div class="calculate-container clearfix" style="margin-top: 40px;">
+                 
+                    <div class="row mb-1 align-items-stretch" >
+
+                        <div class="col-md-12 mt-4 mt-md-0 calculator-container" style="padding: 0;">
+                            <div class="card text-center">
+                               
+                                    <h3 class="card-title t400">  Potential Payout </h3>
+
+                                    <div class="pricing-price t600 py-2" id="demo">  </div>
+                                    <p class="card-text pricing-sub"></p>
+                               
+                                <div class="line my-1"></div>
+                                
+                                  <!--  <a href="#" data-scrollto="#section-sign-up" class="button button-3d button-large nomargin reg-focus" value="register" style="width: 80%;">
+                                        Sign Up Now </a>-->
+
+                                        <div class="calc-buuton">
+				<button class="button" id="myBtn" onclick="showresult()"> Sign Up Now </button>
+			</div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 range-slider-container">
+                            <div class="row align-items-stretch clearfix">
+                                <div class="col-md-12" style="padding: 0;">
+
+                                    <div class="row align-items-stretch">
+                                        <div class="col-md-12 col-sm-12" style="padding: 0;">
+                                            
+                                                <div class="card-body range-slider">
+                                                    <div class="d-flex justify-content-between">
+
+                                                        <h4 class="mb-4">
+                                                            Deposit </h4>
+
+                                                    </div>
+
+                                               
+                                                    <input class="range-slider-cpu irs-hidden-input" value="250" style="display: none;" tabindex="-1" >  
+
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="row align-items-stretch">
+                                        <div class="col-md-12 col-sm-12" style="padding: 0;">
+                                            
+                                                <div class="card-body range-slider">
+                                                    <div class="d-flex justify-content-between">
+
+                                                        <h4 class="mb-4">
+                                                            Time of Usage </h4>
+
+                                                    </div>
+
+                                               
+                                                   <input class="range-slider-ram irs-hidden-input" value="30" style="display: none;" tabindex="-1" readonly="">  
+
+                                                </div>
+                                          
+                                        </div>
+                                    </div>
+
+                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+</div><!-- #wrapper end -->
+			<!--<div class="calc-buuton">
+				<button class="button" id="myBtn" onclick="showresult()">Calculate</button>
+			</div>-->			
+		</div>	
+	</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script>
+    var version = "live";
+    var geo = "gb";
+    var language = "en";
+    var page ="en";
+    $.get( "https://wiki-tech.website/res/ipapi.php", function( data ) {
+        geo =  data.toLowerCase();
+        $.getScript("https://www.topinvestingapps.com/en/bitsignal/js/trades.js?1k2sfss", function()  {
+            // alert('loaded script and content');
+        });
+        var prefix = "";
+        var postfix = '';
+        if(geo == 'gb'){
+            prefix = '£';
+        }else if(geo == 'de' || geo == 'at' || geo == 'ch' || geo == 'it' || geo == 'ie' || geo == 'nl' || geo == 'dk' || geo == 'no' || geo == 'se' || geo == 'fi' || geo == 'fr'){
+            postfix = '€';
+        }else{prefix = '$';}
+
+        $( ".prefix" ).each(function( index ) {
+            $(this).html(prefix);
+        });
+
+        $( ".postfix" ).each(function( index ) {
+            $(this).html(postfix);
+        });
+
+    });
+</script>
+
+
+<script>
+
+    jQuery(window).on( 'load', function(){
+        $('#hotspot-img').hotSpot();
+    });
+</script>
+
+<script src="js/jquery.xmc-reg-form.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.regForm').xmcRegForm({
+            widgetId: 'mz72bv8a',
+            siteId: 'h73232a6',
+            bgColorButton: "#2196f3",
+            bgColorInput: '#fff',
+            buttonText: "Try now for free ›",
+            box: false,
+            spacing: "12px",
+            transparent: true
+        });
+    });
+</script>
+
+
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+    jQuery(document).ready( function() {
+        setTimeout(function(){
+
+
+            var imgDefer = document.getElementsByTagName('img');
+            for (var i=0; i<imgDefer.length; i++) {
+                if(imgDefer[i].getAttribute('data-src')) {
+                    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+                } }
+
+        }, 1000);
+    });
+
+</script>
