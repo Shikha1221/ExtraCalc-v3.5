@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    z-index: 1;
+}
+
+.container-calc {    
+    /*background-color: #0ea572;*/
+    border-radius: 5px;
+    padding: 20px 20px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.calc-body {
+    margin: auto;
+    border: solid 1px #3a4655;
+    box-shadow: 0 0px 10px 0 #313131;    
+	background-image: url('../image/crypto_vs_fiat.jpg');
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+	background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.calc-body::after {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.calc-screen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calc-operation .title {
+    color: #ffffff;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 5px;
+    display: block;
+    margin: 15px 0;
+    position: relative;
+    margin-top: 2px;
+}
+
+.calc-operation .no-title {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+.calc-typed {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+    position: relative;
+}
+
+.calc-result-block {
+    width: 100%;
+    background: #3c4857;
+}
+
+.calc-result-block {
+    width: 100%;
+    background: #3c4857;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc-buuton .button {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px auto;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.31);
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    margin-top: 2px;
+}
+
+.button:hover {
+    background-color: #f0ad4e;
+    transition: all 0.3s ease-out;
+}
+
+.calc-result-block .count-b.active {
+    background: #3acc4061;
+    color: #fff;
+}
+
+.calc-result-block .count-b {
+    background: #425062;
+    color: #858585;
+    padding: 10px 10px;
+    display: flex;
+    font-size: 21px;
+    min-width: 96.5px;
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+    border-right: solid 2px #3c4857;
+    border-bottom: solid 2px #3c4857;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    font-size: 18px;
+}
+@media all and (max-width: 500px) {
+    .calc-result-block .count-b{
+        min-width: 96.5px;
+    }
+    
+}
+.result-block .text-b {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.input {
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+    padding: 2px 0;
+    position: relative;
+    width: 120px;
+    transition: all 0.2s ease-in-out;
+    border: 1px dotted #727b86;
+}
+
+.input:focus {
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border: 1px dotted #eee;
+}
+
+input::-webkit-input-placeholder {
+    color: #858585;
+    font-family: sans-serif;
+}
+
+input:focus::-webkit-input-placeholder {}
+
+.Ñalc-main {
+    /*margin-top: 30px;*/
+    border-top: #727b86 dotted 1px;
+    padding: 10px;
+}
+
+.count-b .doll {
+    margin-left: 3px;
+}
+
+.logo-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-block span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    margin: 0px;    
+	padding: 0px; 
+	/*background-color: #0ea572;*/
+}
+
+img {
+    display: inline;
+    padding: 100px;
+
+}
+
+a {
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 11px 21px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-transition: border 0.3s, background 0.3s, color 0.3s;
+    -ms-transition: border 0.3s, background 0.3s, color 0.3s;
+    -moz-transition: border 0.3s, background 0.3s, color 0.3s;
+    -webkit-transition: border 0.3s, background 0.3s, color 0.3s;
+    border-color: #273476;
+    background: #273476;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #273476;
+    background: #fff;
+}
+
+
+
+@media (max-width: 575.98px) { 
+    .calc-result-block .count-b{
+        min-width: 86px;
+        font-size: 13px;
+    }
+    .result-block .text-b{
+        font-size: 10px;
+    }
+ }
+
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    
+ 
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+   .calc-result-block .count-b{
+        min-width:95.5px;
+    }
+}
